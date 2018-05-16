@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://github.com/fangandyuan/UIKit-macOS.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/fangandyuan/UIKit-MacOS.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
