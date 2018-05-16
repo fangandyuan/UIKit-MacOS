@@ -11,8 +11,8 @@
 		F37DBC4420AC1B8200D6BBE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37DBC4320AC1B8200D6BBE2 /* ViewController.swift */; };
 		F37DBC4620AC1B8300D6BBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37DBC4520AC1B8300D6BBE2 /* Assets.xcassets */; };
 		F37DBC4920AC1B8300D6BBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37DBC4720AC1B8300D6BBE2 /* Main.storyboard */; };
-		F3A08DCF20AC1C1100F16AA3 /* UISliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A08DCD20AC1C1100F16AA3 /* UISliderCell.swift */; };
-		F3A08DD020AC1C1100F16AA3 /* UISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A08DCE20AC1C1100F16AA3 /* UISlider.swift */; };
+		F3A08DD520AC275500F16AA3 /* UISliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A08DD320AC275500F16AA3 /* UISliderCell.swift */; };
+		F3A08DD620AC275500F16AA3 /* UISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A08DD420AC275500F16AA3 /* UISlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +23,8 @@
 		F37DBC4820AC1B8300D6BBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F37DBC4A20AC1B8300D6BBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F37DBC4B20AC1B8300D6BBE2 /* UIKit_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UIKit_macOS.entitlements; sourceTree = "<group>"; };
-		F3A08DCD20AC1C1100F16AA3 /* UISliderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISliderCell.swift; sourceTree = "<group>"; };
-		F3A08DCE20AC1C1100F16AA3 /* UISlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISlider.swift; sourceTree = "<group>"; };
+		F3A08DD320AC275500F16AA3 /* UISliderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISliderCell.swift; sourceTree = "<group>"; };
+		F3A08DD420AC275500F16AA3 /* UISlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		F37DBC4020AC1B8200D6BBE2 /* UIKit-macOS */ = {
 			isa = PBXGroup;
 			children = (
-				F3A08DCB20AC1C1100F16AA3 /* UIKit */,
+				F3A08DD120AC275500F16AA3 /* UIKit */,
 				F37DBC4120AC1B8200D6BBE2 /* AppDelegate.swift */,
 				F37DBC4320AC1B8200D6BBE2 /* ViewController.swift */,
 				F37DBC4520AC1B8300D6BBE2 /* Assets.xcassets */,
@@ -68,19 +68,20 @@
 			path = "UIKit-macOS";
 			sourceTree = "<group>";
 		};
-		F3A08DCB20AC1C1100F16AA3 /* UIKit */ = {
+		F3A08DD120AC275500F16AA3 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				F3A08DCC20AC1C1100F16AA3 /* UISlider */,
+				F3A08DD220AC275500F16AA3 /* UISlider */,
 			);
-			path = UIKit;
-			sourceTree = SOURCE_ROOT;
+			name = UIKit;
+			path = ../../UIKit;
+			sourceTree = "<group>";
 		};
-		F3A08DCC20AC1C1100F16AA3 /* UISlider */ = {
+		F3A08DD220AC275500F16AA3 /* UISlider */ = {
 			isa = PBXGroup;
 			children = (
-				F3A08DCD20AC1C1100F16AA3 /* UISliderCell.swift */,
-				F3A08DCE20AC1C1100F16AA3 /* UISlider.swift */,
+				F3A08DD320AC275500F16AA3 /* UISliderCell.swift */,
+				F3A08DD420AC275500F16AA3 /* UISlider.swift */,
 			);
 			path = UISlider;
 			sourceTree = "<group>";
@@ -156,8 +157,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F37DBC4420AC1B8200D6BBE2 /* ViewController.swift in Sources */,
-				F3A08DCF20AC1C1100F16AA3 /* UISliderCell.swift in Sources */,
-				F3A08DD020AC1C1100F16AA3 /* UISlider.swift in Sources */,
+				F3A08DD520AC275500F16AA3 /* UISliderCell.swift in Sources */,
+				F3A08DD620AC275500F16AA3 /* UISlider.swift in Sources */,
 				F37DBC4220AC1B8200D6BBE2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
