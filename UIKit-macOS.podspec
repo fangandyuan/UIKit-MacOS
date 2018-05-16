@@ -54,32 +54,7 @@ Pod::Spec.new do |s|
   #
 
   s.author             = { "fangyuan1213@icloud.com" => "fangyuan1213@icloud.com" }
-  # Or just: s.author    = "fangyuan"
-  # s.authors            = { "fangyuan" => "fangyuan1213@icloud.com.com" }
-  # s.social_media_url   = "http://twitter.com/fangyuan"
-
-  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If this Pod runs only on iOS or OS X, then specify the platform and
-  #  the deployment target. You can optionally include the target after the platform.
-  #
-
-  # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
-
-  #  When using multiple platforms
-  # s.ios.deployment_target = "5.0
-  s.osx.deployment_target = "10.11"
-  # s.watchos.deployment_target = "2.0"
-  # s.tvos.deployment_target = "9.0"
-
-
-  # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the location from where the source should be retrieved.
-  #  Supports git, hg, bzr, svn and HTTP.
-  #
-
+  s.osx.deployment_target = '10.11'
   s.source       = { :git => "https://github.com/fangandyuan/UIKit-MacOS.git", :tag => "#{s.version}" }
 
 
@@ -91,7 +66,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files = "UIKit/*.swift"
+  s.source_files = "UIKit/UISlider/*.swift"
 
 
   # s.public_header_files = "Classes/**/*.h"
