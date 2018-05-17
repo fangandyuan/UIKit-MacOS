@@ -8,14 +8,14 @@
 
 import Cocoa
 
-class UISliderCell: NSSliderCell {
+public class UISliderCell: NSSliderCell {
 
     var bgColor : NSColor?
     var progressColor : NSColor?
     var cacheColor : NSColor?
     var cacheValue: Double = 0
     
-    override func drawBar(inside rect: NSRect, flipped: Bool) {
+    override public func drawBar(inside rect: NSRect, flipped: Bool) {
         
         if isVertical {
             let marge = rect.minY * 2

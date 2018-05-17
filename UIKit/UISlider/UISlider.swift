@@ -8,28 +8,28 @@
 
 import Cocoa
 
-class UISlider: NSSlider {
+public class UISlider: NSSlider {
 
-    var bgColor : NSColor?  {
+    public var bgColor : NSColor?  {
         willSet {
             let artCell = cell as! UISliderCell
             artCell.bgColor = newValue
         }
     }
-    var progressColor : NSColor?{
+    public var progressColor : NSColor?{
         willSet {
             let artCell = cell as! UISliderCell
             artCell.progressColor = newValue
         }
     }
-    var cacheColor : NSColor?{
+    public var cacheColor : NSColor?{
         willSet {
             let artCell = cell as! UISliderCell
             artCell.cacheColor = newValue
         }
     }
     
-    var cacheValue : Double = 0{
+    public var cacheValue : Double = 0{
         willSet {
             let artCell = cell as! UISliderCell
             artCell.cacheValue = newValue
@@ -43,12 +43,12 @@ class UISlider: NSSlider {
     }
     
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     
-    override func draw(_ dirtyRect: NSRect) {
+    override public func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
         
         
