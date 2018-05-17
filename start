@@ -1,0 +1,14 @@
+#!/bin/bash
+#任何命令执行出错既退出
+set -e
+
+#脚本路径
+shell_path="$( cd "$( dirname "$0"  )" && pwd  )"
+cd ${shell_path}
+echo ${shell_path}
+pod spec lint --sources='http://gitlab.meishubao.com/zhxy_iOS/zhxyPodRepo.git,https://github.com/CocoaPods/Specs' ArtBuglyHotfix.podspec --use-libraries --allow-warnings
+pod repo push YQZHXY ArtBuglyHotfix.podspec --use-libraries --allow-warnings
+
+pod search ArtBuglyHotfix --simple
+
+set +e
